@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <script type="text/javascript" src="../script.js"></script>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    <link rel="stylesheet" href="clgcmpstyle.css">
+    <title>LiveTogether | College Compare</title>
+</head>
+<body>
+
+  <!--Navigation-->
+    <header id="dasboard">
+      <div class="nav" id="nav">
+        <div id="learned-logo">
+          <a href="#dasboard"
+            ><img
+              src="./images/myUpdateInages/newlogo.png"
+              style="width: 120px"
+          /></a>
+        </div>
+        <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
+          <img src="../images/icon/menu.png" />
+        </div>
+        <ul id="list-switch">
+          <li>
+            <a href="/subjects/computer_courses.html"
+              ><img src="../images/courses/computer.png" class="icon" />Computer
+              Courses</a
+            >
+          </li>
+          <li>
+            <a href="/subjects/computer_courses.html#data"
+              ><img src="../images/courses/data.png" class="icon" />Data
+              Structures</a
+            >
+          </li>
+          <li>
+            <a href="/subjects/computer_courses.html#algo"
+              ><img src="../images/courses/algo.png" class="icon" />Algorithm</a
+            >
+          </li>
+          <li>
+            <a href="/subjects/computer_courses.html#projects"
+              ><img
+                src="../images/courses/projects.png"
+                class="icon"
+              />Projects</a
+            >
+          </li>
+        </ul>
+        <div class="search" id="search-switch">
+          <input type="text" placeholder="Search" class="srch" /><button
+            id="srchbtn"
+          >
+            <img src="../images/icon/search.png" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+<div id="container-collegecompare" style="margin-top: 150px;
+	margin-left: 100px;">
+
+    <h1 class="display-5 my-5 text-center">College Compare</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select College</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th> College </th>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                  <tr>
+                    <th>Location</th>
+                    <td id="location1">N/A</td>
+                    <td id="location2">N/A</td>
+                  </tr>
+                   <tr>
+                    <th>NIRF Ranking</th>
+                    <td id="nirfRanking1">N/A</td>
+                    <td id="nirfRanking2">N/A</td>
+                  </tr>
+                    <tr>
+                    <th>NAAC Accredited</th>
+                    <td id="naacAccredited1">N/A</td>
+                    <td id="naacAccredited2">N/A</td>
+                  </tr>
+                  <tr>
+                  <tr>
+                    <th>Placement Rate</th>
+                    <td id="placementRate1">N/A</td>
+                    <td id="placementRate2">N/A</td>
+                  </tr>
+                  <tr>
+                    <th>Fee Structure</th>
+                    <td id="feeStructure1">
+                      <ul>
+                        <li id="b1">B.Tech: N/A</li>
+                        <li id="b2">M.Tech: N/A</li>
+                      </ul>
+                    </td>
+                    <td id="feeStructure2">
+                      <ul>
+                        <li>B.Tech: N/A</li>
+                        <li>M.Tech: N/A</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Area</th>
+                    <td id="area1">N/A</td>
+                    <td id="area2">N/A</td>
+                  </tr>
+                 
+                
+                    <th>Website</th>
+                    <td id="website1">N/A</td>
+                    <td id="website2">N/A</td>
+                  </tr>
+                </table>
+
+        </div>
+    </div>
+</div>
+
+
+ <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img
+            src="../images/courses/newlogo.png"
+            style="width: 200px"
+          />
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="#"><img src="../images/icon\fb.png" /></a>
+            <a href="#"><img src="../images/icon\insta.png" /></a>
+            <a href="#"><img src="../images/icon\tt.png" /></a>
+            <a href="#"><img src="../images/icon\ytube.png" /></a>
+            <a href="#"><img src="../images/icon\linkedin.png" /></a>
+          </div>
+          <br /><br />
+          <p class="rights-text">
+            Copyright © 2024 Created By LiveTogether All Rights Reserved.
+          </p>
+          <br />
+          <p>
+            <img src="../images/icon/location.png" /> Chitkara University<br />Solan,
+            Himachal-174103
+          </p>
+          <br />
+          <p>
+            <img src="../images/icon/phone.png" /> +91-1234-567-890<br /><img
+              src="../images/icon/mail.png"
+            />&nbsp; livetogether95@gmail.com
+          </p>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Newsletter</h1>
+          <div class="border"></div>
+          <br />
+          <p>Enter Your Email to get our News and updates.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email" />
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+    
+<script src="/clgcmpdata.js"></script>
+<script src="/clgCmpmain.js"></script>
+</body>
+
+</html>

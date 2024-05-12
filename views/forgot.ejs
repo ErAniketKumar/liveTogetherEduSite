@@ -1,0 +1,23 @@
+<%- include('./partials/loginheader.ejs') %>
+<div class="container">
+    <h1>Forgot <span class="text-primary">Pwd</span></h1>
+	<form action="/forgot" method="post">
+		<input type="email" name="userEmail" placeholder="Enter email" /><br />
+		<input
+			type="password"
+			name="newPassword"
+			placeholder="New password"
+		/><br />
+
+		<input
+			type="password"
+			name="confirmPassword"
+			placeholder="Confirm password"
+		/><br />
+
+		<input type="submit" value="Reset" />
+		<div class="text-danger text-center"><%= data%></div>
+	</form>
+</div>
+
+<%- include('./partials/loginfooter.ejs') %>

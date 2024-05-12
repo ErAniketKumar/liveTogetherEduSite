@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveTogetherRoadMap</title>
+    <link rel="stylesheet" href="/roadmapstyle.css">
+</head>
+<body>
+
+<%- include("partials/header.ejs") -%>
+
+<section class="hero" id="hero">
+    <div class="container">
+        <h2 class="sub-headline">
+            <span class="first-letter">L</span>ive
+        </h2>
+        <h1 class="headline-main">Together</h1>
+        <div class="headline-description">
+            <div class="seperator">
+                <div class="line line-left"></div>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                <div class="line line-right"></div>
+            </div>
+            <div class="single-animation">
+                <h5>Complete Mentorship</h5>
+                <h6>~ 2024 ~</h6>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Hero ends-->
+
+<div class="container-fluid" id="topics">
+    <div class="row justify-content-around">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/python">
+                    <div class="card-header" style="background-image: url('img/python.jpg'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">Python</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/machinelearning">
+                    <div class="card-header" style="background-image: url('img/machinelearning.jpg'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">Machine Learning</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/git">
+                    <div class="card-header" style="background-image: url('img/git.jpg'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">Git and Github</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second row -->
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/android">
+                    <div class="card-header" style="background-image: url('img/android.jpg'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">Android Development</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/backend">
+                    <div class="card-header" style="background-image: url('img/backEnd.jpg'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">BackEnd Development</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/frontend">
+                    <div class="card-header" style="background-image: url('img/frontEnd.jpg'); background-size: 100%;" >
+                        <div class="overlay">
+                            <div class="name">FrontEnd Development</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Third row -->
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/datastructure">
+                    <div class="card-header" style="background-image: url('img/dataStructures.png'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">Data Structures</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/c">
+                    <div class="card-header" style="background-image: url('img/C.jpg'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">C Language</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="profile-card">
+                <a href="/roadmap/cpp">
+                    <div class="card-header" style="background-image: url('img/cpp.png'); background-size: 100%;">
+                        <div class="overlay">
+                            <div class="name">C++ Language</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") -%>
+
+</body>
+</html>

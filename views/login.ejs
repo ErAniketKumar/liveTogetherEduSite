@@ -1,0 +1,19 @@
+<%- include('./partials/loginheader.ejs') %>
+<div class="container">
+	<div class="px-5">
+		<h1>Sign <span class="text-primary">In</span></h1>
+		<form action="/login" method="post">
+			<input type="email" name="userEmail" placeholder="Enter email" /><br />
+			<input
+				type="password"
+				name="userPassword"
+				placeholder="Enter password"
+			/><br />
+			<input type="submit" value="Login" />
+			<div>Forgot your password? <a href="/forgot">Click here</a></div>
+			<div>Don’t have an Account? <a href="/signup">Sign Up</a></div>
+		</form>
+	</div>
+</div>
+
+<%- include('./partials/loginfooter.ejs') %>
